@@ -32,7 +32,9 @@ In your context file, you could do:
 
 ```
 
-Then in `report.md`, you need to follow some conventions.
+Then in `report.md`, you need to follow a fairly simple
+convention. Just make sure to put the figure label in curly braces at
+the very end of the figure caption text.  Like so:
 
 
 ```markdown
@@ -40,10 +42,14 @@ If figures are your thing, you can see all the way down.
 [Figure](#fig:ecdf.nb.am) shows morning CDF, and
 [Figure](#fig:ecdf.nb.pm) shows the evening CDF.
 
+This figure call has a curly-braced figure reference done properly.
 
 ![Cumulative density function of measured travel times, Northbound, 6 AM{#fig:ecdf.nb.am}](ks_hr_ecdf_n007.pdf)
 
+So does this one.
+
 ![Cumulative density function of measured travel times, Northbound, 6 PM{#fig:ecdf.nb.pm}](ks_hr_ecdf_n019.pdf)
+
 
 
 ---------------------------------------------------
@@ -56,8 +62,9 @@ If figures are your thing, you can see all the way down.
 
 Table: Summary statistics for all PM Peak (3-7pm) estimates on SB Beach{#tab:sb-pm-stats}
 
-
-[Table](#tab:sb-pm-stats) indicate a lot of similarity between the
+Notice the same idea with tables.  `"#tab:sb-pm-stats` is the way to
+define the reference, and how to refer to it later.  For example,
+[Table](#tab:sb-pm-stats) indicates a lot of similarity between the
 afternoon estimates, but [Table](#tab:sb-am-stats) shows a marked
 deviation in the morning period.
 
