@@ -1,0 +1,29 @@
+{
+  "name": "pandoc-context-filters",
+  "version": "0.0.1",
+  "description": "Pandoc filters enhancing pandoc conversions to ConTeXt",
+  "main": "context-float-refs.js",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "pandoc-filter": "^0.1.2"
+  },
+  "devDependencies": {},
+    "scripts": {
+        "pretest": "make paper.tex",
+        "test": "mocha test/test.js",
+        "posttest": "make clean"
+    },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "ConTeXt",
+    "Pandoc"
+  ],
+  "author": "Craig Rindt <crindt@gmail.com>",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  }
+}
