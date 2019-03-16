@@ -10,7 +10,7 @@
 PANDOC = pandoc
 
 # define any compile-time flags
-PANDOCFLAGS = -t context -f markdown --filter=context-float-refs.js
+PANDOCFLAGS = -t context -f markdown --filter=./context-float-refs.js
 
 # define the C source files
 SRCS = test/paper.md ## test/partial.md test/traveltime.md test/traveltime_noR.md
