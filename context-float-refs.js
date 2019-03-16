@@ -10,7 +10,7 @@ function collapse(arr) {
   return _.reduce(arr, function(s,v) {
     if ( v.t === "Space" ) return s + " "
     else if ( v.t === "Str" ) return s + v.c
-    else throw new Error("Don't know how to handle "+JSON.stringify(v))
+    else throw new Error("Don't know how to handle "+arr+" : "+ s + ":"+v+" -- "+JSON.stringify(v))
   },"")
 }
 
@@ -89,8 +89,13 @@ function handleTable(value){
 }
 
 function handleFigure(value){
-    var caption = collapse(value[0].c[0])
-    var target  = value[0].c[1][0]
+    // caption is now the second element of array
+    // target is in third element of array
+    // proof:
+    // throw new Error("handling\n"+value[0].c.length+"\n"+JSON.stringify(value[0]['c'][0])+"\n"+JSON.stringify(value[0]['c'][1])+"\n"+JSON.stringify(value[0]['c'][2]))
+
+    var caption = collapse(value[0].c[1])
+    var target  = value[0].c[2][0]
     var meta    = collapse(value.slice(1))
     var place   = "here"
     var label   = ""
