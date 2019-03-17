@@ -1,11 +1,12 @@
 language: node_js
 node_js:
   - "node"
-  - "8"
+  # - "8"
 
 before_install:
   - sudo apt-get update
-  - sudo apt-get install -y pandoc
+  - wget https://github.com/jgm/pandoc/releases/download/2.7.1/pandoc-2.7.1-1-amd64.deb
+  - sudo dpkg -i pandoc-2.7.7-1-amd64.deb
 
 
 # addons:
