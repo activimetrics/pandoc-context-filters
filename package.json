@@ -1,6 +1,6 @@
 {
   "name": "pandoc-context-filters",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Pandoc filters enhancing pandoc conversions to ConTeXt",
   "main": "context-float-refs.js",
   "dependencies": {
