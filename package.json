@@ -8,7 +8,7 @@
     "pandoc-filter": "^1.0.0"
   },
   "devDependencies": {
-    "mocha": "*",
+    "mocha": "^6.0.2",
     "should": "^13.2.3"
   },
   "scripts": {
