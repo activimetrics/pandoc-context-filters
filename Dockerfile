@@ -1,15 +1,13 @@
 FROM busybox:1.28 AS fetch-pandoc
-ARG PANDOC_VERSION=2.7.1
-
-
-ADD https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-linux.tar.gz /pandoc.tar.gz
+ARG PANDOC_VERSION=2.9.2.1
+ADD https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-linux-amd64.tar.gz /pandoc.tar.gz
 #COPY pandoc-${PANDOC_VERSION}-linux.tar.gz /pandoc.tar.gz
 RUN tar -zxvf pandoc.tar.gz
 RUN mv pandoc-${PANDOC_VERSION}/bin/pandoc /pandoc
 RUN mv pandoc-${PANDOC_VERSION}/bin/pandoc-citeproc /pandoc-citeproc
 RUN ["/pandoc", "-v"]
 
-FROM node:8-alpine
+FROM node:12-alpine
 
 # Create app directory
 WORKDIR /usr/src/app
