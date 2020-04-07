@@ -3,7 +3,7 @@
 This filter can be used to generate figure references, if you follow
 certain conventions.
 
-[![Build Status](https://travis-ci.org/activimetrics/pandoc-context-filters.svg?branch=master)](https://travis-ci.org/activimetrics/pandoc-context-filters) [![Greenkeeper badge](https://badges.greenkeeper.io/activimetrics/pandoc-context-filters.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/activimetrics/pandoc-context-filters.svg?branch=master)](https://travis-ci.org/activimetrics/pandoc-context-filters) 
 
 
 # Prerequisites
