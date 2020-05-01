@@ -5,7 +5,8 @@
   "main": "context-float-refs.js",
   "dependencies": {
     "lodash": "^4.17.15",
-    "pandoc-filter": "^1.0.0"
+    "pandoc-filter": "^1.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "mocha": "^6.2.3",
@@ -14,7 +15,9 @@
   "scripts": {
     "pretest": "make pretest",
     "test": "make test",
-    "posttest": "make clean"
+    "posttest": "make clean",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -28,5 +31,6 @@
   "license": "ISC",
   "directories": {
     "test": "test"
-  }
+  },
+  "snyk": true
 }
