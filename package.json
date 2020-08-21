@@ -6,7 +6,7 @@
   "dependencies": {
     "lodash": "^4.17.20",
     "pandoc-filter": "^1.0.0",
-    "snyk": "^1.378.0"
+    "snyk": "^1.381.1"
   },
   "devDependencies": {
     "mocha": "^6.2.3",
