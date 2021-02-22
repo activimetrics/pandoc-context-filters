@@ -4,7 +4,7 @@
   "description": "Pandoc filters enhancing pandoc conversions to ConTeXt",
   "main": "context-float-refs.js",
   "dependencies": {
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "pandoc-filter": "^1.0.0",
     "snyk": "^1.425.4"
   },
